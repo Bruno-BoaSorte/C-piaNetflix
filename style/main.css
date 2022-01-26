@@ -1,0 +1,119 @@
+
+:root{
+    --vermelho: rgb(209, 9, 9);
+    --preto: rgb(15, 15, 15);
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elementos base da página*/
+body{
+   background: var(--preto);
+   font-family: 'arial', Times, serif;
+    color: white;
+}
+
+
+header .container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo{
+    color:var(--vermelho);
+    font-family: arial black, times;
+    font-size: 25px;
+    margin: 0px;
+}
+
+header a{
+    text-decoration: none;
+    color: rgb(238, 238, 238);
+    margin-right: 10px;
+}
+
+header a:hover{
+    color: #fff;
+
+}
+
+/*Filme principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0,.50), rgba(0,0,0.50)100%), url('/img/theoffice.jpg');
+    
+    height: 560px;
+    background-size: cover; /*com isso edito a imagem usada*/
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .descricao{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.filme-principal .titulo1{
+    margin-top: 0px;
+    font-size: 80px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.filme-principal .titulo2{
+    margin-top: 0px;
+    font-size: 100px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 18px;
+
+    cursor: pointer;
+    transition: .4s ease all;
+}
+
+.botao:hover{
+    background-color: rgba(0, 0, 0, 0.425);
+    color: rgb(100, 99, 99);
+}
+
+.botao i{
+    margin-right: 8px;
+
+}
+
+.container{
+    margin-left: 40px;
+}
+
+.filme-principal .container{
+    width: 80%;
+}
+
+/*referente ao carrossel abaixo*/
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+
+}
+
+.carrosel-filmes{
+    margin-top: 5px;
+}

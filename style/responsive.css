@@ -1,0 +1,24 @@
+/*estou criando abaixo uma regra para o css usando o @media screen*/
+
+/*regras abaixo para telas com minimo de 700px*/
+@media screen and (max-width:700px){
+    /*editando os menu superiores*/
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+    /*editando os botões*/
+    .botao{
+        margin-top: 5px;
+        width: 200px;
+    }
+}
+
+/*regras abaixo para descrição*/
+@media screen and (min-width:1000px){
+    .descricao{
+        width: 50%;
+        text-align: left;
+        
+    }
+}
